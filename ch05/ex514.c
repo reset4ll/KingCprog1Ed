@@ -30,7 +30,7 @@ int main(void)
 	case 6: printf("La letra de la nota es D\n"); break;
 
 	case 5: case 4: case 3: case 2: case 1:
-		    printf("La letra de la nota es F\n"); break;            break;
+		printf("La letra de la nota es F\n"); break;           
 
     /* ¿Nota por debajo de 10? */
 	default: printf("La letra de la nota es F\n"); break;
