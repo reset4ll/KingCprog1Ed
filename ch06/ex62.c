@@ -1,29 +1,36 @@
-/* Ejercicio 6.2 */
+/* Ejercicio 6.2
+ *
+ * El teorema de recursión del MCD de dos números enteros números no
+ * negativos viene dado por: mcd(a,b) = mcd(b, a % b) siendo % el módulo.
+ *
+ *   Algoritmo: Euclides(a, b)
+ *
+ *   if b == 0
+ *      then return a;
+ *      else return Euclides(b, a mod b);
+ *
+ */
 
 #include <stdio.h>
-
 int main(void)
 {
-    int dividendo, divisor, resto = 0;
+	int dividendo, divisor, resto;
 
-    printf("Introduzca dos números enteros no negativos.\n");
-    printf("A. Introduzca el dividendo: ");
-    scanf("%d", &dividendo);
-    printf("B. Introduzca el divisor: ");
-    scanf("%d", &divisor);
+	printf("Introducir dos números enteros no negativos:\n");
+	printf("Introduce el dividendo: ");
+	scanf("%d", &dividendo);
+	printf("Introduce el divisor: ");
+	scanf("%d", &divisor);
 
-    if (divisor == 0) {
-        printf("El mcd de los dos números es: %d\n", dividendo);
-        return -1;
-    }
+	resto = dividendo % divisor; /*  Inicialización */
+	while (resto != 0) {  /* Test */
+		/* Declaración */
+		dividendo = divisor;
+		divisor = resto;
+		resto = dividendo % divisor;
+	}
 
-    while ( divisor != 0) {
-        resto = dividendo / divisor;
-        dividendo = divisor;
-        divisor = resto;
-    }
+	printf("El mcd de los dos números es: %d\n", divisor);
 
-    printf("El mcd de los dos números es: %d\n", divisor);
-
-    return 0;
+	return 0;
 }
