@@ -29,7 +29,7 @@ int main(void)
     else if (valor < 50000.00)
       comision = 100.00 + .0022 * valor;
 
-    else if (valor < 50000.00)
+    else if (valor < 500000.00)
       comision = 155.00 + .0011 * valor;
 
     else 
