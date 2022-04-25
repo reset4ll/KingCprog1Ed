@@ -19,19 +19,14 @@ int main(void)
     /* Diferentes rangos de valores */
     if (valor < 2500.00)
       comision = 30.00 + .017 * valor;
-
     else if (valor < 6250.00)
       comision = 56.00 + .0066 * valor;
-
     else if (valor < 20000.00)
       comision = 76 + .0034 * valor;
-
     else if (valor < 50000.00)
       comision = 100.00 + .0022 * valor;
-
     else if (valor < 500000.00)
       comision = 155.00 + .0011 * valor;
-
     else 
       comision = 255.00 + .0009 * valor;
 
