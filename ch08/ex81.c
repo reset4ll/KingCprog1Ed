@@ -4,6 +4,7 @@
 
 #define TRUE 1
 #define FALSE 0
+#define N 10
 
 typedef int Bool; /* Nuevo tipo booleano */
 
@@ -31,7 +32,7 @@ int main(void)
 	printf("Dígitos repetido(s): ");
 
     /* Búsqueda de los números repetidos */
-	for (index = 0; index < 10; index++) {
+	for (index = 0; index < N; index++) {
         /*  Si es verdad que está repetido, imprímelo */
 		if (es_repetido[index])
 			printf("%d ", index);
