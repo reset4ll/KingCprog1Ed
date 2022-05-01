@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-/* Macro que define la longitud del arrayay */
+/* Macro que define la longitud del array */
 #define SIZE sizeof(array) / sizeof(array[0]) /* 'Unsigned long' */
 /* Número de elementos */
 #define N 10
