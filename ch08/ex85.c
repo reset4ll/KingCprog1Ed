@@ -16,7 +16,7 @@ int main(void)
 	for (index = 0; index < SIZE; index++)
 		scanf("%d", &array[index]);
 
-    /* printf("La longitud del arrayay es: (%lu)\n", SIZE); */
+    /* printf("La longitud del array es: (%lu)\n", SIZE); */
 	printf("En orden inverso:     ");
 	for (index = SIZE - 1; index >= 0; index--)
 		printf(" %d", array[index]);
