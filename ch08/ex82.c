@@ -27,23 +27,21 @@ int main(void)
 		printf("\n");
 	}
 
-	//////////////////////////////////////////////////////
-	//
-	//     /* Este bloque mostraría los números
-	//      * ingresados del array en pantalla. Usado para
-	//      * ver si la asignación al array era correcta.
-	//      */
-	//
-	//     printf("Array es: ");
-	//
-	//     while (num > 0) {
-	//     digito = num % 10;  /* Resto */
-	//     digito_visto[index] = digito;  /* Asignación */
-	//     num = num / 10;     /* Siguiente dígito */
-	//     printf("%d ", digito_visto[index]);
-	//
-	//     }
-	//////////////////////////////////////////////////////
+
+	    /*  /* Este bloque mostraría los números */
+	    /*   * ingresados del array en pantalla. Usado para */
+	    /*   * ver si la asignación al array era correcta. */
+	    /*   */
+
+	    /*  printf("Array es: "); */
+
+	    /*  while (num > 0) { */
+	    /*  digito = num % 10;  /* Resto */
+	    /*  digito_visto[index] = digito;  /* Asignación */
+	    /*  num = num / 10;     /* Siguiente dígito */
+	    /*  printf("%d ", digito_visto[index]); */
+
+	    /*  } */
 
 	/* Comienzo de la búsqueda */
 	while (num > 0) {
