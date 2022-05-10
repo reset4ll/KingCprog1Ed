@@ -1,4 +1,15 @@
-/* Ejercicio 9.3 */
+/* Ejercicio 9.3
+*
+* El teorema de recursión del MCD de dos números enteros números no
+* negativos viene dado por: mcd(a,b) = mcd(b, a % b) siendo % el módulo.
+*
+*   Algoritmo: Euclides(a, b)
+*
+*   if b == 0
+*      then return a;
+*      else return Euclides(b, a mod b);
+*
+*/
 
 #include <stdio.h>
 
