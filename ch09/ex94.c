@@ -39,8 +39,8 @@ int main(void)
 /* Definición de la función */
 int day_of_year(int day, int month, int year)
 {
-	/* Test, en ese año fue bisisesto febrero? */
-	if (year % 4 == 0)
+	/* Test, año bisiesto? */
+	if (!( year % 4) && ((year % 100) || !(year % 400)))
 		M2 = 29; /* Es bisiesto */
 	else
 		M2 = 28; /* No es bisiesto */
