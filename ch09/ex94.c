@@ -4,6 +4,7 @@
 
 /* Números mágicos */
 #define M1  31 /* Enero */
+     /* M2  28 o 29 Febrero */
 #define M3  31 /* Marzo */
 #define M4  30 /* Abril */
 #define M5  31 /* Mayo */
@@ -21,7 +22,7 @@ int day_of_year(int, int, int);
 /* Variables globales */
 int resultado = 0;
 int day, month, year;
-int M2; /* Febrero */
+int M2; /* Febrero 28 o 29 */
 
 int main(void)
 {
@@ -40,7 +41,7 @@ int main(void)
 int day_of_year(int day, int month, int year)
 {
 	/* Test, año bisiesto? */
-	if (!( year % 4) && ((year % 100) || !(year % 400)))
+	if (!(year % 4) && ((year % 100) || !(year % 400)))
 		M2 = 29; /* Es bisiesto */
 	else
 		M2 = 28; /* No es bisiesto */
