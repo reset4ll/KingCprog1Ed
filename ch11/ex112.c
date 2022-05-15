@@ -25,7 +25,7 @@ int main(void)
 
     return 0;
 }
-
+/* Salida */
 /* El valor de p = i es 0x3 */
 /* El valor de p = &q es 0x7fffd11f66d8 */
 /* El valor de p = *&q es 0x7fffd11f66d4 */
