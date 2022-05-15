@@ -23,6 +23,7 @@ int main(void)
     return 0;
 }
 
+/* Salida */
 /* El valor de *p = 3 */
 /* El valor de &p = 0x7ffdd736de10 */
 /* El valor de *&p = 0x7ffdd736de0c */
