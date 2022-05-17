@@ -29,6 +29,6 @@ void avg_sum(float a[], int n, float *avg, float *sum)
     int i;
     *sum = 0.0;
     for (i = 0; i < n; i++)
-        *sum += a[i]; /* Suma */
+        *sum += a[i]; /* Suma del array */
     *avg = *sum / n;  /* Media de la suma */
 }
