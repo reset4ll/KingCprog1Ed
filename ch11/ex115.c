@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /* Prototipo de la función */
-void split_time(long int total_seg, int *, int *, int *);
+void split_time(long int, int *, int *, int *);
 
 /* Variables globales */
 long int total_seg;
@@ -31,7 +31,7 @@ void split_time(long int total_seg, int *hr, int *min, int *seg)
 	*hr = total_seg / 3600;
 	resto_seg = total_seg % 3600;
 
-	/* Define los minutos y el los segundos restantes */
+	/* Define los minutos y los segundos restantes */
 	if (resto_seg >= 60) {
 
 		*min = resto_seg / 60;
