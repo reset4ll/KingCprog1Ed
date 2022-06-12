@@ -5,16 +5,16 @@
 
 int main()
 {
-	char array[N] = {0};
+	char array[N] = {0}; /* Inicializa el array con 0's */
 	int i = 0;
 	char letra;
-	unsigned long longitud; /* Para strlen() */
+	unsigned long longitud; /* El tipo 'ul' para strlen() */
 
 	printf("Escribir mensaje (max 25 letras): ");
 
 	/* Crea el mensaje hasta el fín de línea */
 	while ((letra = getchar()) != '\n') {
-		array[i] = letra; /* Usando aritmética de pointers */
+		array[i] = letra;
 		i++;
 	}
 	/* Calcula el tamaño del mensaje */
@@ -22,8 +22,8 @@ int main()
 	/* printf("Longitud del array es: %lu\n", longitud); */
 
 	/* Iteradores para el recorrido del mensaje*/
-	char *p = &array[0]; /* Comienzo */
-	char *q = &array[longitud]; /* Final */
+	char *p = &array[0]; /* Apunta al comienzo */
+	char *q = &array[longitud]; /* Apunta al final */
 
 	/* Compara elementos individuales del array */
 	while (*p++ != *--q) {
